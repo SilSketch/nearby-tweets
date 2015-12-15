@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+    Post Bar <div class="container-fluid" ng-controller="PostStatusController as tweetPostCTR">
+  
+-->
+  <form  ng-controller="PostStatusController as tweetPostCTR" name="tweetForm" class="navbar-form row" ng-submit="tweetPostCTR.postStatusTweet()">
+
+        <div class="input-group col-xs-4 col-md-4">
+            <span class="input-group-addon">
+                      <span class="fa fa-youtube " ></span>
+            </span>
+            <input class="form-control" name="videoURL" data-toggle="tooltip" data-placement="bottom" title="Video URL" type="text" placeholder={{tweetPostCTR.videoURL_hint}} minlength="5" ng-model="tweetPostCTR.videoURL" required ng-change="tweetPostCTR.videoURLChanged()">
+        </div>
+        <div class="input-group col-md-4">
+            <span class="input-group-addon">
+                  <span class="fa fa-comment " ></span>
+            </span>
+            <input class="form-control" data-toggle="tooltip" data-placement="bottom" title="Comment" type="text" placeholder={{tweetPostCTR.comment_hint}}  minlength="3" ng-maxlength={{tweetPostCTR.appCommentMaxLength}} ng-model="tweetPostCTR.comment" required>
+        </div>
+
+        <div class="input-group col-md-3">
+            <button class="btn-lg btn-danger"><span class="fa fa-twitter fa-2x"></span> Tweet to #{{appHashTag}}</button>
+        </div>
+        
+    </form>
+    <div class="text-center row">
+        <div class="text-secondary col-md-11">
+            <span class="text-tweet">Inspire </span> others <span class="text-tweet">sharing</span> a <span class="text-hashTag">#{{appHashTag}}</span> <span class="text-tweet">tweet</span> with a YouTube link.    
+        </div>
+        <div class ="col-xs-1 col-md-1">
+            <button class="btn btn-link" id="twitterLogOut" ng-click="tweetCRT.twitterLogOut()"  >Sign Out</button>
+        </div>
+    </div>

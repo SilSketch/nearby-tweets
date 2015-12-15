@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--
+    Display Feedback Messages when required
+-->
+<div class="alert alert-success text-center" ng-show="tweetCRT.showSuccessFeedback" >
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>  Guess What!  </strong> <span ng-bind="tweetCRT.feedbackMessage"></span>
+ </div>
+ <div class="info alert-warning text-center" ng-show="tweetCRT.showWarningFeedback" >
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>  Warning!   </strong> <span ng-bind="tweetCRT.feedbackMessage"></span>
+ </div>
+<div class="alert alert-danger text-center" ng-show="tweetCRT.showErrorFeedback" >
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong> Sorry!  </strong> <span ng-bind="tweetCRT.feedbackMessage"></span>
+</div>

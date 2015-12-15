@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+    Header
+-->
+
+<div class="container">
+    <div>This page <span class="text-hashTag"> shows</span></div>
+    <div class=" container-fluid row-fluid">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 hashSymbol">#</div>        
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div>
+                 <span class="intro-hashTag" ng-bind="appHashTag"> </span>
+                 <span> tweets that contain a YouTube link.</span>
+            </div>            
+                <div class="text-info intro-sub-text container-fluid">
+                    <div ng-show="tweetCRT.appData.visitorLocated">
+                        <span class="fa fa-map-marker fa-2x"></span> in
+                        <span class="text-uppercase" ng-bind="tweetCRT.appData.visitorCity"> </span> (
+                        <span class="text-capitalize" ng-bind="tweetCRT.appData.visitorCountry"></span>)
+                    </div>
+                </div>           
+        </div>        
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="search-group-addon">
+            <div class="input-group ">                
+                    <input class="form-control" data-toggle="tooltip" data-placement="bottom" title="Filter Shown Results"  type="text" ng-model="tweetCRT.searchTerm"  id="searchBox" placeholder="Enter keywords" />
+                    <span class="input-group-addon">
+                <span class="fa fa-filter" ></span>
+                    </span>
+                </div>
+            </div>
+    </div>   

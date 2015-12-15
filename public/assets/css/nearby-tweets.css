@@ -1,0 +1,106 @@
+/*
+ * HEADER INTRO
+ */
+.intro-header {
+    padding-top: 250px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color: #5DD7FD;
+}
+.intro-text{
+    color: #081D8B;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial,sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px
+}
+.intro-sub-text{
+    font-family: 'Caveat Brush', cursive;    
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.btn-primary {
+    padding: 10px 50px;
+    font-size: 22px;
+}
+
+#search-group-addon {
+float: right;
+}
+
+/*
+ * HEADER LOGGED
+
+ */
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hashSymbol {
+    font-size: 122px;
+    margin-top: -20px;
+}
+.intro-hashTag {
+   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial,sans-serif;
+   font-size: 50px;
+   margin-left: -15px;
+   margin-top: 20px;
+   font-weight: bold;
+}
+.bg-blue-twitter {
+   background-color: #55acee;
+}
+
+.sub-header {
+    
+}
+
+.sub-header div {
+    font-weight: 600;
+}
+
+.text-secondary {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial,sans-serif;
+    color: #5DD7FD;
+}
+
+.text-hashTag, .intro-hashTag, .hashSymbol{
+    color: #ffffff;
+
+}
+
+.text-tweet {
+    color: #FF5E37;
+}
+
+.text-temp {
+        background-color: #0baacc;
+    color: #003185;
+    }
+    .bg-info {
+        background-color: #5DD7FD;
+        padding-top: 120px;
+        color:#081D8B;
+        font-size: 16px;
+}
+
+/*
+ * POST BAR
+ */
+
+.bg-bar-post {
+    background-color: #081D8B;
+    text-align: center;
+
+    }
+#results.row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/**
+* Tweets
+*/
